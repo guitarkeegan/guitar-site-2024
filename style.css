@@ -1,0 +1,135 @@
+:root {
+  --primary-gradient-top: #e3dd5d;
+  --primary-gradient-bottom: #7dd453;
+  --btn-text: #15230e;
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Source Sans 3", sans-serif;
+  --p-text: "Hind Madurai", sans-serif;
+  --main-bg: #eceae9;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 82px;
+}
+
+.description {}
+
+.sub-titles {
+  text-align: center;
+  text-decoration: underline;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  padding: 220px 40px 0px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 80px;
+  background-color: var(--main-bg);
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 36px;
+}
+
+h2 {
+  font-family: var(--secondary-font);
+  font-size: 36px;
+}
+
+p,
+label,
+input,
+textarea {
+  font-family: var(--p-text);
+  font-size: 32px;
+}
+
+.q-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.quote {
+  font-family: var(--p-text);
+  font-size: 32px;
+}
+
+.q-attr {
+  font-family: var(--p-text);
+  font-size: 24px;
+  text-align: right;
+}
+
+.quote-2 {
+  font-family: var(--p-text);
+  font-size: 32px;
+  text-align: right;
+}
+
+.q-attr-2 {
+  font-family: var(--p-text);
+  font-size: 24px;
+  text-align: left;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  border: solid black 1px;
+  padding: 80px 10px 10px 10px;
+  gap: 12px;
+  max-width: 260px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.signup-btn {
+  text-align: center;
+  background-image: linear-gradient(to bottom,
+      var(--primary-gradient-top),
+      var(--primary-gradient-bottom));
+  padding: 6px 2px;
+  color: var(--btn-text);
+  border: solid black 1px;
+  box-shadow: gray 0 3px 2px;
+  font-size: 32px;
+  text-decoration: none;
+}
+
+#secret-link {
+  text-decoration: none;
+  color: black;
+}
