@@ -14,10 +14,21 @@ body {
   box-sizing: border-box;
 }
 
+#img-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#home-img {
+  border: solid black;
+}
+
 .content {
   display: flex;
   flex-direction: column;
   gap: 82px;
+  max-width: 500px;
 }
 
 .form-section {
@@ -73,6 +84,7 @@ input,
 textarea {
   font-family: var(--p-text);
   font-size: 32px;
+  max-width: 500px;
 }
 
 .q-wrapper {
@@ -110,7 +122,12 @@ textarea {
   border: solid black 1px;
   padding: 80px 10px 10px 10px;
   gap: 12px;
-  max-width: 260px;
+}
+
+@media (max-width: 600px) {
+  #contact {
+    max-width: 260px;
+  }
 }
 
 footer {
@@ -131,6 +148,7 @@ footer {
   box-shadow: gray 0 3px 2px;
   font-size: 32px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 #secret-link {
